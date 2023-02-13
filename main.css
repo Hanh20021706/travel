@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------- */
+header{
+
+}
+.header-main{
+    text-align: center;
+}
+.header-main nav ul{
+    
+    display: flex;
+    justify-content: center;
+}
+.header-main nav ul li{
+    list-style: none;
+    padding: 0px 25px;
+}
+.header-main nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.header-main nav ul li a:hover{
+    color: brown;
+}
+/* ======================= */
+main{
+    margin-top: 30px;
+    
+}
+.content-2019{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.content-2019 article{
+    margin-top: 150px;
+
+}
+.content-2019 h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    
+}
+.content-2019 p{
+    padding-top: 20px;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.content-2019 button{
+    border: none;
+    background-color: #f0cb29;
+    color: white;
+    border-radius: 2px;
+    padding: 5px 20px;
+}
+
+
+/* ==================== */
+.content-post{
+    margin-top: 70px;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+.product{
+    margin-top: 70px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+}
+.item{
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.item img:hover{
+    transform: scale(1.2);
+}
+.trip{
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    transform: translateY(120px);
+    transition: ease-in-out 0.1;
+
+    animation-name: fadeOut ;
+    animation-duration: 1s;
+    
+}
+
+.info h2{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.info h2, .info p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+.info button{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.trip:hover .info{
+    transform: translateY(0);
+    transition: ease-in-out 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+
+
+
+
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+/* ===================== */
+
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgb(6, 6, 68);
+}
+.footer-title p{
+    color: white;
+} 
+.iput-add{
+    border: 2px solid #f0cb29;
+    background-color: rgb(6, 6, 68);
+    color: white;
+}
+.iput-send{
+    background-color: #f0cb29;
+    padding: 2px 20px;
+    color: white;
+    border-radius: 5px;
+}
